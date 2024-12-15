@@ -1,0 +1,4 @@
+name: LaunchPad
+version: '1.0'
+main: ai.noobybooby.launchPad.LaunchPad
+api-version: '1.21'
