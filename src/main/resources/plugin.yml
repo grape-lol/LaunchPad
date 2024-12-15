@@ -1,4 +1,6 @@
 name: LaunchPad
-version: '1.0'
+version: '1.0.1'
 main: ai.noobybooby.launchPad.LaunchPad
+description: Lets you create Launch Pads.
+author: Nooby Booby
 api-version: '1.21'
