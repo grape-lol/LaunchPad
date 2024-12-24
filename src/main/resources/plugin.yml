@@ -1,6 +1,14 @@
 name: LaunchPad
-version: '1.0.1'
+version: '1.0.2'
 main: ai.noobybooby.launchPad.LaunchPad
 description: Lets you create Launch Pads.
 author: Nooby Booby
 api-version: '1.21'
+
+permissions:
+  launchpad.use:
+    description: Allows a player to use launch pads.
+    default: true
+  launchpad.nofalldamage:
+    description: The player will no longer take fall damage when using the launch pad.
+    default: true

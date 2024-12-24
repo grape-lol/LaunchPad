@@ -24,8 +24,12 @@ public class FallDamage implements Listener {
             Entity entity = event.getEntity();
             if (entity instanceof Player) {
                 Player player = (Player) entity;
-                UUID playerId = player.getUniqueId();
 
+                if (!player.hasPermission("launchpad.nofalldamage")) {
+                    return;
+                }
+
+                UUID playerId = player.getUniqueId();
                 PlayerWalk playerWalk = plugin.getPlayerWalkListener();
                 if (playerWalk.getLaunchedPlayers().contains(playerId)) {
                     event.setCancelled(true);

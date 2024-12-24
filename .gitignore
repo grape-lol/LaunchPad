@@ -2,3 +2,9 @@
 /.gradle/
 /build/
 /build/classes/java/main/
+/.idea/.name
+/.idea/modules/ai.noobybooby.LaunchPad.main.iml
+/.idea/compiler.xml
+/.idea/modules/LaunchPad.main.iml
+/.idea/modules.xml
+/.idea/vcs.xml

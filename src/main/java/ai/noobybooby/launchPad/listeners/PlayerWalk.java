@@ -29,6 +29,10 @@ public class PlayerWalk implements Listener {
         if (plugin.getConfig().getBoolean("enable-plugin")) {
             Player player = event.getPlayer();
 
+            if (!player.hasPermission("launchpad.use")) {
+                return;
+            }
+
             Location underBlock = player.getLocation().clone();
             underBlock.setY(underBlock.getY() - 1);
 
